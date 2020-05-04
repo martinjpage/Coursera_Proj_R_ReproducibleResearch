@@ -52,7 +52,7 @@ ggplot(steps_per_day, aes(x = total)) + geom_histogram() +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/graph mean total steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 Report the mean and median of the total number of steps taken per day.
 
@@ -78,7 +78,7 @@ interval_pattern %>% ggplot(aes(interval, average)) + geom_line() +
     ggtitle("Average Daily Steps in 5-minute interval")
 ```
 
-![](PA1_template_files/figure-html/graph average daily activity pattern-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 Report the time interval with the average maximum number of steps (peak daily activity).  
 
@@ -144,7 +144,7 @@ ggplot(new_steps_per_day, aes(x = total)) + geom_histogram() +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/new histogram-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 Recalculate the mean and median of the total number of steps taken per day.  
 
@@ -179,4 +179,4 @@ new_act %>% mutate(day = days_class_factor) %>% group_by(interval, day) %>% summ
     ggtitle("Average Daily Steps in 5-minute interval for Weekdays vs Weekends") 
 ```
 
-![](PA1_template_files/figure-html/weekdays vs weeknends-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
